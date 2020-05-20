@@ -1,0 +1,34 @@
+** UEL.info 
+**
+*UEL, TYPE=U1, NUMIP=8, NUMSDV=288, NUMSDVPIP=36, ABADUMMY=Q3D8
+1 2 3 4 5 6 7 8
+1 2 3 4 5 6 7 8
+**
+*SDV, UEL=U1
+ S Stress_components TENSOR_3D_FULL 7 8 9 10 11 12
+ E Strain_components TENSOR_3D_FULL 1 2 3 4 5 6 
+** EPG Electrical_potential_gradient_vector VECTOR 13 14 15
+** EFLX Electrical_flux_vector VECTOR 16 17 18
+** EPG Electrical_potential_gradient_vector VECTOR 7 8 
+** ONE Temporary SCALAR 6
+**
+*NV
+ U Spatial_displacement VECTOR 1 2 3
+ EPOT Electric_potential SCALAR 9
+ NT11 Polarizations SCALAR 11
+ NT12 Polarizations SCALAR 12
+ NT13 Polarizations SCALAR 13
+**
+******************************************************************************** 
+**
+** POL Polarization VECTOR 91 92 93 
+**
+**
+******************************************************************************** 
+**
+** *DIM: THREE_D or TWO_D_PLANAR or AXISYMMETRIC
+*DIM
+ THREE_D
+*Energyoutput
+ ALLSE ALLWK ALLpD allcd 
+**
